@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ProjectZip</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+</head>
+<body>
+
+<div class="panel panel-default">
+    <div class="panel-heading">Choose files</div>
+    <div class="panel-body">
+        <form action="/archive" method="POST" enctype="multipart/form-data" role = "form">
+
+            <div class="form-group"><input type="file" min="1" max="999" name="file[]" multiple="multiple"></div>
+
+            <button type="submit" class="btn btn-default navbar-btn">Send files</button>
+
+
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>
